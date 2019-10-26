@@ -1,18 +1,92 @@
-@import "core/settings";
-@import "core/links";
-@import "layout/header";
-@import "layout/main-section";
-@import "layout/secondary-section";
-@import "components/buttons";
+/* fonts */
 
-body {
-  background: url("../images/logo-adalab-80px.png") center center no-repeat
-    $color-white;
-  margin: 0;
-  height: 100vh;
+@font-face {
+  font-family: Circular;
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2") format("woff2"), url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
-header {
-  color: red;
-  border: 2px solid green;
+@font-face {
+  font-family: Circular;
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff2") format("woff2"), url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  border: 2px solid red;
+  width: 100%;
+  padding: 0 15px;
+  background: black;
+}
+
+.header__img {
+  width: 89px;
+  height: 26px;
+  border: 1px solid blue;
+}
+
+.header__ul {
+  list-style: none;
+  padding-right: 20px;
+  color: white;
+}
+
+/* section 1 */
+
+.section1 {
+  border: 2px solid purple;
+  padding: 180px 15px 30px 15px;
+  background: rgb(80, 155, 245);
+  color: white;
+  height: 50vh;
+}
+
+.section1__h1 {
+  font-size: 48px;
+}
+
+.section1__h2 {
+  font-size: 24px;
+}
+
+.section1__button {
+  width: 100%;
+  background: rgb(29, 185, 84);
+  display: flex;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1__p {
+  font-size: 14px;
+}
+
+/* section 2 */
+
+.section2 {
+  background: white;
+  text-align: center;
+  font-size: 32px;
+}
+
+.section2__icon {
+  width: 142px;
 }
